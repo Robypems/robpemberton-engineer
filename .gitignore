@@ -1,0 +1,46 @@
+# Keep local backups and Finder metadata off the public website.
+.DS_Store
+index-before-*.html
+style-before-*.css
+
+# Publish only assets referenced by index.html.
+# Add a matching exception below when the website uses a new asset.
+/assets/*
+!/assets/airfoil-geometry.png
+!/assets/attached-flow.png
+!/assets/cnc-serrated-fan.png
+!/assets/demagnetiser-compressed.png
+!/assets/demagnetiser-printed-compressed.jpeg
+!/assets/dissertation-experimental-investigation-of-the-performance-and-noise-of-dyson-high-speed-fans-compressed.pdf
+!/assets/downforce-table-lower.png
+!/assets/downforce-table-upper.png
+!/assets/exploded-view-of-1mm-cfrp-components.png
+!/assets/fan-boundary-conditions.png
+!/assets/fan-deformation.png
+!/assets/fan-le-serra-a.png
+!/assets/fan-maximum-stress.png
+!/assets/fan-mesh.png
+!/assets/fan-te-serra-a.png
+!/assets/fs3-cdr.pdf
+!/assets/life-tester-close-up-compressed.jpg
+!/assets/life-tester-no-background-compressed.png
+!/assets/motor-mount-compressed.png
+!/assets/moulds-left-to-right–upper-surface-lower-surface-corrugated-sections.png
+!/assets/pin-jig-clipped-version-compressed.jpg
+!/assets/pin-jig-compressed.png
+!/assets/porous-a.png
+!/assets/porous-construction-2.png
+!/assets/porous-construction.png
+!/assets/printed-ogv.png
+!/assets/printed-pin-press-compressed.jpeg
+!/assets/robert-pemberton-cv-USC.pdf
+!/assets/separated-flow.png
+!/assets/serra-a.png
+!/assets/serra-c.png
+!/assets/slit-a.png
+!/assets/slit-construction.png
+!/assets/vacuum-stamp-front-compressed.png
+!/assets/vacuum-stamp-front-cross-section-compressed.png
+!/assets/vacuum-stamp-rear-compressed.png
+!/assets/vacuum-stamp-rear-cross-section-compressed.png
+!/assets/vacuum-stamp-setup-compressed.jpg
