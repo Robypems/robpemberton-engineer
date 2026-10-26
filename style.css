@@ -2580,3 +2580,164 @@ main,
     .preview-item img { padding: 9px; }
     .preview-item span { padding: 7px 9px; font-size: 10px; }
 }
+
+
+/* October 26: compact headings, explicit categories, and thermal research. */
+.site-header-inner { justify-content: center; }
+.site-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px 22px;
+    padding: 15px 0;
+}
+.site-nav a { line-height: 1.4; }
+.hero h1 { font-size: clamp(38px, 3.85vw, 54px); }
+.portfolio-title { font-size: clamp(28px, 2.8vw, 38px); }
+.project h2 { font-size: clamp(32px, 3.5vw, 48px); }
+.project-title-grid { margin-top: 22px; }
+.project-heading-line { display: flex; align-items: baseline; gap: 14px; }
+.project-heading-line .project-number {
+    display: block;
+    flex: 0 0 auto;
+    min-width: 1ch;
+    margin: 0;
+    color: var(--accent);
+    font-size: 26px;
+    font-weight: 650;
+    line-height: 1.15;
+    letter-spacing: 0;
+    text-align: left;
+    font-variant-numeric: tabular-nums;
+}
+.project-heading-line .project-kicker { margin: 0; }
+.project-header .project-context { margin-top: 9px; }
+.manufactured-research-panel h3,
+.evidence-change-panel h3,
+.formula-result-copy h3,
+.team-integration-panel h3,
+.life-test-built-panel h3,
+.aerospace-development-grid h3 { font-size: clamp(24px, 2.4vw, 32px); }
+.tooling-title h3 { font-size: clamp(28px, 3vw, 38px); }
+.tooling-project-title { display: block; }
+.confidentiality-note a { text-underline-offset: 3px; }
+
+/* Give both porous construction views equal prominence beside the other methods. */
+.mechanism-grid { grid-template-columns: minmax(0, 2fr) repeat(2, minmax(0, 1fr)); }
+.porous-construction-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.porous-construction-pair > div { min-width: 0; }
+.porous-construction-pair > div + div { border-left: 1px solid var(--line); }
+.mechanism-card .porous-construction-pair img { height: 240px; padding: 14px; }
+.porous-construction-pair span {
+    display: block;
+    padding: 0 10px 14px;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.4;
+    text-align: center;
+}
+.mechanism-card:not(:first-child) > figure { padding-bottom: 31px; }
+
+/* Show the supplier and in-house press variants as two clearly labeled pairs. */
+.pin-variant-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.pin-variant { min-width: 0; }
+.pin-variant > h4 { margin: 0 0 14px; color: var(--accent); font-size: 16px; line-height: 1.4; }
+.pin-variant-images { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; align-items: stretch; }
+.pin-variant-gallery .image-card { min-width: 0; }
+.pin-variant-gallery .image-card figcaption { padding: 17px; font-size: 14px; }
+.pin-variant-gallery .image-card figcaption strong { font-size: 16px; }
+.pin-variant-gallery .pin-cad-card .image-viewport { height: 255px; }
+.pin-variant-gallery .pin-cad-card .image-viewport img { width: 100%; height: 100%; padding: 7px; object-fit: contain; }
+.pin-variant-gallery .pin-supplier-card > img,
+.pin-variant-gallery .pin-components-card > img,
+.pin-variant-gallery .pin-installed-card > img { height: 255px !important; padding: 10px; object-fit: contain; }
+.additional-test-card { margin-top: 28px; max-width: 780px; }
+.additional-test-card h3 { margin: 14px 0; }
+
+/* EDF figures retain complete dimensions and original legends. */
+.thermo-intro-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: start;
+    gap: 36px;
+    margin-top: 30px;
+}
+.thermo-intro-copy h3 { margin: 14px 0; font-size: clamp(24px, 2.4vw, 32px); line-height: 1.15; }
+.thermo-intro-copy p:not(.card-label) { color: var(--muted); font-size: 17px; line-height: 1.65; }
+.thermo-geometry-card > img,
+.thermo-wide-card > img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: none;
+    padding: 0;
+    object-fit: contain;
+}
+.thermodynamic-project .visual-heading { margin-top: 30px; }
+.thermodynamic-project .visual-heading > .section-label {
+    grid-column: 1 / -1;
+    color: var(--accent);
+    font-size: 12px;
+    line-height: 1.35;
+    align-self: start;
+}
+.thermodynamic-project .visual-heading h3 { margin-top: 0; font-size: clamp(24px, 2.4vw, 32px); }
+.thermo-wide-card { margin-top: 18px; }
+.thermo-aero-card { max-width: 1000px; margin-inline: auto; }
+.thermo-findings-grid { margin-top: 24px; }
+.thermo-findings-grid article { padding: 24px; }
+.thermo-findings-grid article p:last-child { margin-bottom: 0; }
+.thermo-table-wrap { margin-top: 24px; }
+.thermo-table-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius-small); }
+.thermo-results-table { width: 100%; min-width: 520px; border-collapse: collapse; background: var(--background-raised); font-size: 16px; font-variant-numeric: tabular-nums; }
+.thermo-results-table caption { padding: 18px; color: var(--muted); text-align: left; font-size: 15px; line-height: 1.5; caption-side: top; }
+.thermo-results-table th,
+.thermo-results-table td { padding: 17px 20px; border-top: 1px solid var(--line); text-align: right; }
+.thermo-results-table th:first-child { text-align: left; }
+.thermo-results-table thead { color: var(--accent); }
+.thermo-results-table thead th { font-size: 14px; }
+.thermo-lowest { background: var(--accent-soft); }
+.thermo-result-label { display: block; margin-top: 5px; font-size: 11px; font-weight: 500; color: var(--accent); }
+.thermo-table-note { margin: 13px 0 0; color: var(--quiet); font-size: 13px; line-height: 1.6; }
+.thermo-outcome { margin: 24px 0 0; padding-left: 20px; border-left: 2px solid var(--accent-line); color: var(--muted); font-size: 17px; line-height: 1.65; }
+
+@media (max-width: 1080px) {
+    .hero h1 { font-size: clamp(36px, 4.2vw, 44px); }
+    .mechanism-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .mechanism-card:first-child { grid-column: 1 / -1; }
+    .site-nav { justify-content: center; gap: 10px 22px; }
+}
+@media (max-width: 820px) {
+    .hero h1 { font-size: 42px; }
+    .site-nav { gap: 10px 18px; }
+    .site-nav a { font-size: 12px; }
+    .pin-variant-gallery { grid-template-columns: 1fr; gap: 24px; }
+    .thermo-intro-grid { grid-template-columns: 1fr; gap: 22px; }
+    .thermo-geometry-card { max-width: 760px; }
+}
+@media (max-width: 580px) {
+    html { scroll-padding-top: 135px; }
+    .hero h1 { font-size: 36px; }
+    .project h2 { font-size: 32px; }
+    .site-nav { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px 12px; padding: 12px 0; }
+    .site-nav a { font-size: 11px; }
+    .project-heading-line { gap: 11px; }
+    .project-heading-line .project-number { font-size: 23px; }
+    .project-heading-line .project-kicker { font-size: 15px; }
+    .mechanism-grid { grid-template-columns: 1fr; }
+    .mechanism-card:first-child { grid-column: auto; }
+    .mechanism-card .porous-construction-pair img { height: 200px; padding: 8px; }
+    .porous-construction-pair span { font-size: 11px; }
+    .mechanism-card:not(:first-child) > figure { padding-bottom: 0; }
+    .pin-variant-gallery .pin-cad-card .image-viewport { height: 210px; }
+    .pin-variant-gallery .pin-supplier-card > img,
+    .pin-variant-gallery .pin-components-card > img,
+    .pin-variant-gallery .pin-installed-card > img { height: 210px !important; padding: 7px; }
+    .pin-variant-gallery .image-card figcaption { padding: 13px; font-size: 12px; }
+    .pin-variant-gallery .image-card figcaption strong { font-size: 14px; }
+    .thermo-results-table { min-width: 0; table-layout: fixed; font-size: 14px; }
+    .thermo-results-table thead th { font-size: 12px; }
+    .thermo-results-table th, .thermo-results-table td { padding: 12px 8px; overflow-wrap: anywhere; }
+    .thermo-intro-copy p:not(.card-label), .thermo-outcome { font-size: 16px; }
+}

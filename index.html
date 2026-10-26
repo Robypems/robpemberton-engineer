@@ -1,497 +1,353 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Engineering design portfolio of Robert Pemberton, Mechanical and Aerospace Engineer.">
-
-    <title>Robert Pemberton | Engineering Design Portfolio</title>
-
-    <link rel="stylesheet" href="style.css?v=20261017-framing-2">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Engineering design portfolio of Robert Pemberton, Mechanical and Aerospace Engineer." name="description"/>
+<title>Robert Pemberton | Engineering Design Portfolio</title>
+<link href="style.css?v=20261026-portfolio-1" rel="stylesheet"/>
 </head>
-
 <body>
-    <a class="skip-link" href="#main-content">Skip to content</a>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header aria-label="Primary navigation" class="site-header">
+<div class="site-header-inner">
 
-    <header class="site-header" aria-label="Primary navigation">
-        <div class="site-header-inner">
-            <a class="site-name" href="#top">Robert Pemberton</a>
-
-            <nav class="site-nav" aria-label="Portfolio sections">
-                <a href="#research">Research</a>
-                <a href="#membrane">Industry</a>
-                <a href="#tooling">Tooling</a>
-                <a href="#life-test">Life Test</a>
-                <a href="#aerospace">Aerospace</a>
-            </nav>
-        </div>
-    </header>
-
-    <main id="main-content">
-        <section class="hero" id="top">
-            <div class="hero-grid">
-                <div>
-                    <p class="hero-name">Robert Pemberton · London, UK</p>
-
-                    <h1>
+<nav aria-label="Portfolio sections" class="site-nav"><a href="#research">Aeroacoustic Research</a><a href="#membrane">Production Equipment</a><a href="#life-test">Test Equipment</a><a href="#thermodynamics">Thermodynamic Research</a><a href="#aerospace">Formula Student</a><a href="#more-work">Product Design</a></nav>
+</div>
+</header>
+<main id="main-content">
+<section class="hero" id="top">
+<div class="hero-grid">
+<div>
+<p class="hero-name">Robert Pemberton · London, UK</p>
+<h1>
                         Mechanical <span>and Aerospace Engineer</span>
-                    </h1>
+</h1>
+</div>
+<div class="hero-introduction">
+<p class="portfolio-title">Engineering Design Portfolio</p>
+<p class="intro">This portfolio is a collection of my mechanical and aerospace design work. It covers academic research and industry projects, including manufacturing and test equipment.</p>
+<p class="confidentiality-note">Some of my best design work is directly on products released to the market; however, I am unable to share any pictures. The <a href="#more-work">Product Design section</a> describes the key points of each project.</p>
+</div>
+</div>
+<div aria-label="A preview of CAD, simulation and manufactured hardware" class="hero-preview">
+<a class="preview-item preview-demagnetizer" href="#demagnetizer">
+<img alt="CAD assembly of the universal demagnetizing fixture" decoding="async" src="assets/demagnetiser-compressed.png"/>
+<span>Fixture design</span>
+</a>
+<a class="preview-item preview-fan" href="#research">
+<img alt="Manufactured aluminum serrated fan" decoding="async" src="assets/cnc-serrated-fan.png"/>
+<span>Five-axis manufacture</span>
+</a>
+<a class="preview-item preview-porous" href="#research">
+<img alt="Porous OGV construction geometry" decoding="async" src="assets/porous-construction-2.png"/>
+<span>Parametric geometry</span>
+</a>
+<a class="preview-item preview-flow" href="#aerospace">
+<img alt="Rear-wing CFD flow visualization" decoding="async" src="assets/separated-flow.png"/>
+<span>Flow simulation</span>
+</a>
+<a class="preview-item preview-printed" href="#pin-jig">
+<img alt="Printed fixture and manufactured assembly components" decoding="async" src="assets/pin-jig-clipped-version-compressed.jpg"/>
+<span>Printed &amp; assembled</span>
+</a>
+<a class="preview-item preview-stamp" href="#membrane">
+<img alt="Front membrane vacuum stamp CAD" decoding="async" src="assets/vacuum-stamp-front-compressed.png"/>
+<span>Handheld tooling</span>
+</a>
+</div>
+<div aria-label="Core capabilities" class="hero-capabilities">
+<span>CAD &amp; DFM</span>
+<span>Prototype &amp; Manufacture</span>
+<span>Test &amp; Validation</span>
+<span>Production Implementation</span>
+</div>
+</section>
+<section aria-labelledby="selected-work-heading" class="project-index">
+<p class="section-label selected-work-label" id="selected-work-heading">Selected Work</p>
+<div class="index-links"><a href="#research"><span>1</span><strong>Aeroacoustic Research</strong><small>Dyson-funded · ISVR</small></a><a href="#membrane"><span>2</span><strong>Production Equipment</strong><small>Automated membrane application</small></a><a href="#tooling"><span>3</span><strong>Production Jigs and Fixtures</strong><small>Demagnetizing and roll-pin insertion</small></a><a href="#life-test"><span>4</span><strong>Life-Test Fixture</strong><small>Test Equipment</small></a><a href="#thermodynamics"><span>5</span><strong>Thermodynamic Research</strong><small>BEng · Motor cooling</small></a><a href="#aerospace"><span>6</span><strong>Formula Student</strong><small>28 design iterations</small></a><a href="#more-work"><span>7</span><strong>Product Design</strong><small>Released hardware and product development</small></a></div>
+</section>
+<section class="project academic-project featured-project" id="research">
+<header class="project-header">
+<div><div class="project-heading-line"><p aria-hidden="true" class="project-number">1</p><p class="project-kicker">Aeroacoustic Research</p></div>
 
+<p class="project-context">Dyson-funded · Institute of Sound and Vibration Research</p>
+</div>
 
-                </div>
-
-                <div class="hero-introduction">
-                    <p class="portfolio-title">Engineering Design Portfolio</p>
-
-                    <p class="intro">
-                        This portfolio complements my CV by showing the design work behind the
-                        results: the level of detail in my CAD, the range of concepts and iterations
-                        I develop to reach an optimum solution, and how those designs become
-                        practical tools and hardware for research and production.
-                    </p>
-
-                    <p class="confidentiality-note">
-                        Some of my strongest CAD work cannot be shown publicly because it is
-                        protected by employer intellectual property. Where customer-product CAD is
-                        unavailable, I show the production, assembly and test tools I designed to
-                        manufacture and verify that hardware. No source CAD files are available for
-                        download.
-                    </p>
-                </div>
-            </div>
-
-            <div class="hero-preview" aria-label="A preview of CAD, simulation and manufactured hardware">
-                <a class="preview-item preview-demagnetizer" href="#demagnetizer">
-                    <img src="assets/demagnetiser-compressed.png" alt="CAD assembly of the universal demagnetizing fixture" decoding="async">
-                    <span>Fixture design</span>
-                </a>
-                <a class="preview-item preview-fan" href="#research">
-                    <img src="assets/cnc-serrated-fan.png" alt="Manufactured aluminum serrated fan" decoding="async">
-                    <span>Five-axis manufacture</span>
-                </a>
-                <a class="preview-item preview-porous" href="#research">
-                    <img src="assets/porous-construction-2.png" alt="Porous OGV construction geometry" decoding="async">
-                    <span>Parametric geometry</span>
-                </a>
-                <a class="preview-item preview-flow" href="#aerospace">
-                    <img src="assets/separated-flow.png" alt="Rear-wing CFD flow visualization" decoding="async">
-                    <span>Flow simulation</span>
-                </a>
-                <a class="preview-item preview-printed" href="#pin-jig">
-                    <img src="assets/pin-jig-clipped-version-compressed.jpg" alt="Printed fixture and manufactured assembly components" decoding="async">
-                    <span>Printed &amp; assembled</span>
-                </a>
-                <a class="preview-item preview-stamp" href="#membrane">
-                    <img src="assets/vacuum-stamp-front-compressed.png" alt="Front membrane vacuum stamp CAD" decoding="async">
-                    <span>Handheld tooling</span>
-                </a>
-            </div>
-
-            <div class="hero-capabilities" aria-label="Core capabilities">
-                <span>CAD &amp; DFM</span>
-                <span>Prototype &amp; Manufacture</span>
-                <span>Test &amp; Validation</span>
-                <span>Production Implementation</span>
-            </div>
-        </section>
-
-        <section class="project-index" aria-labelledby="selected-work-heading">
-            <p class="section-label selected-work-label" id="selected-work-heading">Selected Work</p>
-
-            <div class="index-links">
-                <a href="#research">
-                    <span>01</span>
-                    <strong>High-speed fan noise research</strong>
-                    <small>Dyson-funded · ISVR</small>
-                </a>
-
-                <a href="#membrane">
-                    <span>02</span>
-                    <strong>Automated membrane application station</strong>
-                    <small>40% → 98% yield</small>
-                </a>
-
-                <a href="#demagnetizer">
-                    <span>03</span>
-                    <strong>Universal demagnetizing fixture</strong>
-                    <small>One-handed operation</small>
-                </a>
-
-                <a href="#life-test">
-                    <span>04</span>
-                    <strong>Life-test fixture</strong>
-                    <small>Adaptable cycle testing</small>
-                </a>
-
-                <a href="#aerospace">
-                    <span>05</span>
-                    <strong>Formula Student rear wing</strong>
-                    <small>28 design iterations</small>
-                </a>
-            </div>
-        </section>
-
-        <section class="project academic-project featured-project" id="research">
-            <header class="project-header">
-                <div>
-                    <p class="project-kicker">Featured Project · Acoustic Research</p>
-                    <p class="project-context">Dyson-funded · Institute of Sound and Vibration Research</p>
-                </div>
-
-                <p class="project-number" aria-hidden="true">1</p>
-            </header>
-
-            <div class="project-title-grid">
-                <h2>Noise Reduction of a High-Speed Fan</h2>
-
-                <p class="project-summary">
-                    An experimental investigation into applying noise-reduction methods developed for
-                    flat plates to curved outlet guide vanes (OGVs) and a high-speed rotating fan,
-                    while measuring the resulting acoustic and aerodynamic tradeoffs.
-                </p>
-            </div>
-
-            <div class="metric-row" aria-label="Research scope and results">
-                <div class="metric metric-accent">
-                    <strong>9</strong>
-                    <span>Modified OGV concepts developed</span>
-                </div>
-
-                <div class="metric">
-                    <strong>5</strong>
-                    <span>OGVs manufactured and rig-tested</span>
-                </div>
-
-                <div class="metric">
-                    <strong>2</strong>
-                    <span>6082-T6 aluminum fan designs</span>
-                </div>
-
-                <div class="metric">
-                    <strong>≈8 dB</strong>
-                    <span>Later recorded fan-noise reduction</span>
-                </div>
-            </div>
-
-            <figure class="image-card research-design-comparison">
-                <div class="research-triptych">
-                    <div>
-                        <span>Porous</span>
-                        <img src="assets/porous-a.png" alt="Fully porous outlet guide vane CAD design" loading="lazy" decoding="async">
-                    </div>
-                    <div>
-                        <span>Slitted</span>
-                        <img src="assets/slit-a.png" alt="Slitted outlet guide vane CAD design" loading="lazy" decoding="async">
-                    </div>
-                    <div>
-                        <span>Serrated</span>
-                        <img src="assets/serra-c.png" alt="Serrated outlet guide vane CAD design" loading="lazy" decoding="async">
-                    </div>
-                </div>
-                <figcaption>
-                    <strong>Representative OGV designs</strong>
+</header>
+<div class="project-title-grid">
+<h2>Noise Reduction of a High-Speed Fan</h2>
+<p class="project-summary">An experimental investigation into applying noise-reduction methods developed for flat plates to outlet guide vanes (OGVs) and a high-speed rotating fan, while measuring the resulting acoustic and aerodynamic tradeoffs.</p>
+</div>
+<div aria-label="Research scope and results" class="metric-row">
+<div class="metric metric-accent">
+<strong>9</strong>
+<span>Modified OGV concepts developed</span>
+</div>
+<div class="metric">
+<strong>5</strong>
+<span>OGVs manufactured and rig-tested</span>
+</div>
+<div class="metric">
+<strong>2</strong>
+<span>6082-T6 aluminum fan designs</span>
+</div>
+<div class="metric">
+<strong>3 dB</strong>
+<span>Noise reduction in a frequency band</span>
+</div>
+</div>
+<figure class="image-card research-design-comparison">
+<div class="research-triptych">
+<div>
+<span>Porous</span>
+<img alt="Fully porous outlet guide vane CAD design" decoding="async" loading="lazy" src="assets/porous-a.png"/>
+</div>
+<div>
+<span>Slitted</span>
+<img alt="Slitted outlet guide vane CAD design" decoding="async" loading="lazy" src="assets/slit-a.png"/>
+</div>
+<div>
+<span>Serrated</span>
+<img alt="Serrated outlet guide vane CAD design" decoding="async" loading="lazy" src="assets/serra-c.png"/>
+</div>
+</div>
+<figcaption>
+<strong>Representative OGV designs</strong>
                     The three mechanisms are shown on the same baseline geometry for direct comparison.
                 </figcaption>
-            </figure>
-
-            <div class="research-story research-introduction">
-                <article>
-                    <p class="story-step">1 · Research question</p>
-                    <h3>Transfer three proven mechanisms to curved fan hardware</h3>
-                    <p>
+</figure>
+<div class="research-story research-introduction">
+<article>
+<p class="story-step">1 · Research question</p>
+<h3>Transfer three proven mechanisms to curved OGV/fan hardware</h3>
+<p>
                         The research investigated whether leading-edge serrations and slits, or
                         porosity applied across a surface, could reduce noise when transferred from
                         flat-plate research to curved OGV airfoils while minimizing aerodynamic loss.
                     </p>
-                </article>
-
-                <article>
-                    <p class="story-step">2 · Geometry challenge</p>
-                    <h3>Modify protected STEP geometry without a feature history</h3>
-                    <p>
+</article>
+<article>
+<p class="story-step">2 · Geometry challenge</p>
+<h3>Modify protected STEP geometry without a feature history</h3>
+<p>
                         Dyson supplied solid-body geometry to protect intellectual property. The OGV
                         curvature and local angle change continuously along the span, so every cut had
                         to follow the local surface. After SolidWorks proved too slow for the required
                         iteration, I moved the work to Siemens NX and produced nine printable designs.
                     </p>
-                </article>
-            </div>
-
-            <div class="visual-heading research-mechanism-heading">
-                <div>
-                    <p class="section-label">OGV design development</p>
-                    <h3>Nine concepts across three noise-reduction mechanisms</h3>
-                </div>
-
-                <p>
+</article>
+</div>
+<div class="visual-heading research-mechanism-heading">
+<div>
+<p class="section-label">OGV design development</p>
+<h3>Nine concepts across three noise-reduction mechanisms</h3>
+</div>
+<p>
                     Two porous, three slitted and four serrated OGV concepts varied the geometry of
                     each mechanism so its acoustic effect and aerodynamic penalty could be tested.
                 </p>
-            </div>
+</div>
+<div class="mechanism-grid">
+<article class="mechanism-card">
 
-            <div class="mechanism-grid">
-                <article class="mechanism-card">
-                    <figure>
-                        <img
-                            src="assets/porous-construction.png"
-                            alt="CAD construction geometry used to create a porous outlet guide vane"
-                            loading="lazy"
-                            decoding="async"
-                        >
-                    </figure>
-                    <p class="story-step">Porosity · 2 concepts</p>
-                    <h3>Locally aligned cylindrical cuts</h3>
-                    <p>
-                        Equally spaced cylinders were constructed normal to local vane planes, then
-                        patterned radially around all 17 vanes and subtracted from the baseline body.
-                        The fully porous design used 1 mm holes spaced 10 mm apart; the partial design
-                        used two rows of 2.5 mm holes to increase communication between surfaces.
-                    </p>
-                </article>
-
-                <article class="mechanism-card">
-                    <figure>
-                        <img
-                            src="assets/slit-construction.png"
-                            alt="Projected curves and construction planes used for slitted outlet guide vanes"
-                            loading="lazy"
-                            decoding="async"
-                        >
-                    </figure>
-                    <p class="story-step">Slits · 3 concepts</p>
-                    <h3>Projected geometry following the leading edge</h3>
-                    <p>
+<figure class="porous-construction-pair">
+<div><img alt="Local construction planes used to align porous OGV cuts" decoding="async" loading="lazy" src="assets/porous-construction.png"/><span>Local reference planes</span></div>
+<div><img alt="Cylindrical cutting bodies patterned over the curved outlet guide vanes" decoding="async" loading="lazy" src="assets/porous-construction-2.png"/><span>Cylindrical cutting bodies</span></div>
+</figure>
+<p class="story-step">Porosity · 2 concepts</p>
+<h3>Locally aligned cylindrical cuts</h3>
+<p>Equally spaced cylinders were constructed normal to local vane planes, patterned radially around all 17 vanes and subtracted from the baseline body. The fully porous design used 1 mm holes spaced 10 mm apart; the partial design used two rows of 2.5 mm holes. The openings allow flow from the high-pressure lower surface to the low-pressure upper surface.</p>
+</article>
+<article class="mechanism-card">
+<figure>
+<img alt="Projected curves and construction planes used for slitted outlet guide vanes" decoding="async" loading="lazy" src="assets/slit-construction.png"/>
+</figure>
+<p class="story-step">Slits · 3 concepts</p>
+<h3>Projected geometry following the leading edge</h3>
+<p>
                         Curves from a radial plane were projected onto the vane and then onto a local
                         tangent plane. The resulting profiles were thickened, patterned around the
                         OGV and subtracted. The three designs varied slit width from 1 to 1.5 mm and
                         slit length from 5 to 10 mm.
                     </p>
-                </article>
-
-                <article class="mechanism-card">
-                    <figure>
-                        <img
-                            src="assets/serra-a.png"
-                            alt="Outlet guide vane with a sinusoidal serrated leading edge"
-                            loading="lazy"
-                            decoding="async"
-                        >
-                    </figure>
-                    <p class="story-step">Serrations · 4 concepts</p>
-                    <h3>Sinusoidal edges varied by wavelength and amplitude</h3>
-                    <p>
+</article>
+<article class="mechanism-card">
+<figure>
+<img alt="Outlet guide vane with a sinusoidal serrated leading edge" decoding="async" loading="lazy" src="assets/serra-a.png"/>
+</figure>
+<p class="story-step">Serrations · 4 concepts</p>
+<h3>Sinusoidal edges varied by wavelength and amplitude</h3>
+<p>
                         A sinusoidal curve was drawn on a plane tangent to the vane, thickened into a
                         cutting body and patterned around all vanes. The set compared 3, 5 and 10 mm
                         wavelengths at a 10 mm peak-to-peak amplitude, plus a half-amplitude variant.
                     </p>
-                </article>
-            </div>
-
-
-
-            <div class="manufactured-research-panel">
-                <figure class="image-card photo-card research-photo-card">
-                    <img
-                        src="assets/printed-ogv.png"
-                        alt="Five manufactured outlet guide vanes beside the baseline Dyson OGV"
-                        loading="lazy"
-                        decoding="async"
-                    >
-                    <figcaption>
+</article>
+</div>
+<div class="manufactured-research-panel">
+<figure class="image-card photo-card research-photo-card">
+<img alt="Five manufactured outlet guide vanes beside the baseline Dyson OGV" decoding="async" loading="lazy" src="assets/printed-ogv.png"/>
+<figcaption>
                         Five test OGVs and the baseline. Two black parts were produced by FFF; three
                         gray parts by SLA.
                     </figcaption>
-                </figure>
-
-                <div>
-                    <p class="section-label">Manufacture &amp; rig testing</p>
-                    <h3>Five OGVs progressed from CAD to experiment</h3>
-                    <p>
-                        Serra-B and Slit-A were produced by fused-filament fabrication. Surface finish
-                        made post-processing difficult, so Porous-A, Serra-A and Serra-C were produced
-                        by stereolithography. Every design was sanded to achieve a tight, coaxial fit
-                        with both the motor and the surrounding metal ring.
-                    </p>
-                    <p>
+</figure>
+<div>
+<p class="section-label">Manufacture &amp; rig testing</p>
+<h3>Five OGVs progressed from CAD to experiment</h3>
+<p>Serra-B and Slit-A were produced by fused-filament fabrication (FFF). I moved to stereolithography (SLA) for Porous-A, Serra-A and Serra-C because its smoother surface finish would help limit skin-friction drag. The FFF-printed OGVs were not reprinted in SLA after their tests showed no noise reduction.</p>
+<p>
                         Acoustic and aerodynamic data were collected from 2,000 to 7,000 rpm and at
                         several pressure differentials around the 4,400 rpm operating point. None of
                         the five OGVs produced a meaningful sound-power reduction against the baseline,
                         demonstrating that OGV interaction was not the dominant broadband noise source.
                     </p>
-                </div>
-            </div>
-
-            <div class="evidence-change-panel">
-                <p class="story-step">Evidence changed the project</p>
-                <h3>The null result redirected the work toward the dominant source</h3>
-                <p>
-                    Rather than ending with an unsuccessful OGV campaign, I extended the project to
-                    the rotating fan blades, which were known to be a dominant noise source. I designed
-                    leading- and trailing-edge serrated fans to pursue a measurable reduction.
-                </p>
-            </div>
-
-            <figure class="image-card comparison-card fan-design-comparison">
-                <div class="paired-visual paired-visual-fans">
-                    <div class="paired-item">
-                        <span>Leading-edge serrations</span>
-                        <img src="assets/fan-le-serra-a.png" alt="High-speed fan CAD with leading-edge serrations" loading="lazy" decoding="async">
-                    </div>
-                    <div class="paired-item">
-                        <span>Trailing-edge serrations</span>
-                        <img src="assets/fan-te-serra-a.png" alt="High-speed fan CAD with trailing-edge serrations" loading="lazy" decoding="async">
-                    </div>
-                </div>
-                <figcaption>
-                    <strong>Serrated fan concepts</strong>
+</div>
+</div>
+<div class="evidence-change-panel">
+<p class="story-step">Evidence changed the project</p>
+<h3>The null result redirected the work toward the dominant source</h3>
+<p>Rather than ending with an unsuccessful OGV campaign, I extended the project to the fan itself, which was a known dominant noise source. Limited time meant I could manufacture only two fans, so I designed one with leading-edge serrations and one with trailing-edge serrations.</p>
+</div>
+<figure class="image-card comparison-card fan-design-comparison">
+<div class="paired-visual paired-visual-fans">
+<div class="paired-item">
+<span>Leading-edge serrations</span>
+<img alt="High-speed fan CAD with leading-edge serrations" decoding="async" loading="lazy" src="assets/fan-le-serra-a.png"/>
+</div>
+<div class="paired-item">
+<span>Trailing-edge serrations</span>
+<img alt="High-speed fan CAD with trailing-edge serrations" decoding="async" loading="lazy" src="assets/fan-te-serra-a.png"/>
+</div>
+</div>
+<figcaption>
+<strong>Serrated fan concepts</strong>
                     Edge treatments were transferred from stationary OGVs to the rotating source.
                 </figcaption>
-            </figure>
-
-            <div class="visual-heading">
-                <div>
-                    <p class="section-label">Structural validation</p>
-                    <h3>ABAQUS analysis before committing to five-axis machining</h3>
-                </div>
-
-                <p>
+</figure>
+<div class="visual-heading">
+<div>
+<p class="section-label">Structural validation</p>
+<h3>ABAQUS analysis before committing to five-axis machining</h3>
+</div>
+<p>
                     Each fan required approximately one week of machining from a single block of
                     6082-T6 aluminum. Structural analysis therefore verified the most aggressive
                     serration geometry before material and machine time were committed.
                 </p>
-            </div>
-
-            <div class="fea-gallery">
-                <figure class="image-card">
-                    <img src="assets/fan-mesh.png" alt="Tetrahedral finite-element mesh on a serrated fan" loading="lazy" decoding="async">
-                    <figcaption><strong>Tetrahedral mesh</strong>Fine global seed reduced to 0.6 mm within the academic-license node limit.</figcaption>
-                </figure>
-                <figure class="image-card">
-                    <img src="assets/fan-boundary-conditions.png" alt="ABAQUS centrifugal and fixed boundary conditions on a serrated fan" loading="lazy" decoding="async">
-                    <figcaption><strong>Boundary conditions</strong>Radial centrifugal loading with the hub fully constrained.</figcaption>
-                </figure>
-                <figure class="image-card">
-                    <img src="assets/fan-deformation.png" alt="ABAQUS deformation result for a serrated fan blade" loading="lazy" decoding="async">
-                    <figcaption><strong>Deformation</strong>Maximum predicted displacement was 38 microns.</figcaption>
-                </figure>
-                <figure class="image-card">
-                    <img src="assets/fan-maximum-stress.png" alt="ABAQUS von Mises stress result at a serration root" loading="lazy" decoding="async">
-                    <figcaption><strong>Maximum stress</strong>197 MPa at the serration root, below the 250 MPa material yield strength.</figcaption>
-                </figure>
-            </div>
-
-            <div class="research-detail-grid">
-                <article>
-                    <p class="card-label">Design case</p>
-                    <p>The 10 mm peak-to-peak leading-edge serration was selected as the highest-stress geometry.</p>
-                </article>
-                <article>
-                    <p class="card-label">Load case</p>
-                    <p>Analysis represented 150% of the centrifugal load at the 7,000 rpm test maximum.</p>
-                </article>
-                <article>
-                    <p class="card-label">Mesh convergence</p>
-                    <p>1.5, 1.0 and 0.6 mm meshes converged to within 8 and 6 microns of maximum displacement.</p>
-                </article>
-                <article>
-                    <p class="card-label">Material</p>
-                    <p>6082-T6 aluminum: 70 GPa Young's modulus, 0.33 Poisson's ratio and 2.7 g/cm³ density.</p>
-                </article>
-            </div>
-
-            <div class="built-panel research-built-panel">
-                <div class="built-copy">
-                    <p class="section-label">Five-axis manufacture &amp; result</p>
-                    <h3>Complex geometry became testable metal hardware</h3>
-                    <p>
+</div>
+<div class="fea-gallery">
+<figure class="image-card">
+<img alt="Tetrahedral finite-element mesh on a serrated fan" decoding="async" loading="lazy" src="assets/fan-mesh.png"/>
+<figcaption><strong>Tetrahedral mesh</strong>Fine global seed reduced to 0.6 mm within the academic-license node limit.</figcaption>
+</figure>
+<figure class="image-card">
+<img alt="ABAQUS centrifugal and fixed boundary conditions on a serrated fan" decoding="async" loading="lazy" src="assets/fan-boundary-conditions.png"/>
+<figcaption><strong>Boundary conditions</strong>Radial centrifugal loading with the hub fully constrained.</figcaption>
+</figure>
+<figure class="image-card">
+<img alt="ABAQUS deformation result for a serrated fan blade" decoding="async" loading="lazy" src="assets/fan-deformation.png"/>
+<figcaption><strong>Deformation</strong>Maximum predicted displacement was 38 microns.</figcaption>
+</figure>
+<figure class="image-card">
+<img alt="ABAQUS von Mises stress result at a serration root" decoding="async" loading="lazy" src="assets/fan-maximum-stress.png"/>
+<figcaption><strong>Maximum stress</strong>197 MPa at the serration root, below the 250 MPa material yield strength.</figcaption>
+</figure>
+</div>
+<div class="research-detail-grid">
+<article>
+<p class="card-label">Design case</p>
+<p>The 10 mm peak-to-peak leading-edge serration was selected as the highest-stress geometry.</p>
+</article>
+<article>
+<p class="card-label">Load case</p>
+<p>Analysis represented 150% of the centrifugal load at the 7,000 rpm test maximum.</p>
+</article>
+<article>
+<p class="card-label">Mesh convergence</p>
+<p>1.5, 1.0 and 0.6 mm meshes converged to within 8 and 6 microns of maximum displacement.</p>
+</article>
+<article>
+<p class="card-label">Material</p>
+<p>6082-T6 aluminum: 70 GPa Young's modulus, 0.33 Poisson's ratio and 2.7 g/cm³ density.</p>
+</article>
+</div>
+<div class="built-panel research-built-panel">
+<div class="built-copy">
+<p class="section-label">Five-axis manufacture &amp; result</p>
+<h3>Complex geometry became testable metal hardware</h3>
+<p>
                         The serrated geometry required five-axis CNC machining. Cutter failures and
                         machine errors forced several restarts because even small asymmetry could create
                         unpredictable vibration at speed.
                     </p>
-                    <p>
-                        At dissertation submission, the tested trailing-edge fan produced a 3 dB
-                        reduction in important frequency bands - approximately a 50% reduction in
-                        sound power - with a 2.98% to 3.62% reduction in axial flow. Subsequent testing
-                        recorded on my USC CV reports approximately 8 dB reductions from both completed
-                        fan designs.
-                    </p>
-                </div>
-
-                <figure class="image-card photo-card cnc-fan-card">
-                    <img src="assets/cnc-serrated-fan.png" alt="Serrated aluminum fan clamped during five-axis CNC machining" loading="lazy" decoding="async">
-                    <figcaption>Manufactured serrated aluminum fan clamped on the five-axis CNC.</figcaption>
-                </figure>
-            </div>
-
-            <div class="evidence-panel">
-                <div>
-                    <p class="section-label">Research evidence</p>
-                    <h3>Complete MSc dissertation</h3>
-                    <p>
+<p>The tested trailing-edge fan produced a 3 dB reduction in a frequency band, with peak reductions up to 8 dB. The acoustic benefit came with a 2.98% to 3.62% reduction in axial flow.</p>
+</div>
+<figure class="image-card photo-card cnc-fan-card">
+<img alt="Serrated aluminum fan clamped during five-axis CNC machining" decoding="async" loading="lazy" src="assets/cnc-serrated-fan.png"/>
+<figcaption>Manufactured serrated aluminum fan clamped on the five-axis CNC.</figcaption>
+</figure>
+</div>
+<div class="evidence-panel">
+<div>
+<p class="section-label">Research evidence</p>
+<h3>Complete MSc dissertation</h3>
+<p>
                         The dissertation documents the CAD development, manufacture, structural
                         analysis, acoustic testing and aerodynamic comparison.
                     </p>
-                </div>
-
-                <a class="button-link" href="assets/dissertation-experimental-investigation-of-the-performance-and-noise-of-dyson-high-speed-fans-compressed.pdf" target="_blank" rel="noopener">
+</div>
+<a class="button-link" href="assets/dissertation-experimental-investigation-of-the-performance-and-noise-of-dyson-high-speed-fans-compressed.pdf" rel="noopener" target="_blank">
                     View MSc dissertation <span aria-hidden="true">↗</span>
-                </a>
-            </div>
-        </section>
+</a>
+</div>
+</section>
+<section class="project" id="membrane">
+<header class="project-header">
+<div><div class="project-heading-line"><p aria-hidden="true" class="project-number">2</p><p class="project-kicker">Production Equipment · Industry</p></div>
 
-        <section class="project" id="membrane">
-            <header class="project-header">
-                <div>
-                    <p class="project-kicker">Production Automation · Industry</p>
-                    <p class="project-context">INVISIO Communications · Production engineering</p>
-                </div>
+<p class="project-context">Racal Acoustics (INVISIO Communications) · Production engineering</p>
+</div>
 
-                <p class="project-number" aria-hidden="true">2</p>
-            </header>
-
-            <div class="project-title-grid">
-                <h2>Automated Microphone Membrane Application Station</h2>
-
-                <p class="project-summary">
+</header>
+<div class="project-title-grid">
+<h2>Automated Microphone Membrane Application Station</h2>
+<p class="project-summary">
                     A four-part robotic gluing and pneumatic membrane-placement process developed
                     to waterproof microphone housings while protecting acoustic performance and
                     eliminating the variation of the original manual operation.
                 </p>
-            </div>
-
-            <div class="metric-row" aria-label="Project results">
-                <div class="metric metric-accent">
-                    <strong>40% → 98%</strong>
-                    <span>Production yield</span>
-                </div>
-
-                <div class="metric">
-                    <strong>4×</strong>
-                    <span>Faster than manual gluing</span>
-                </div>
-
-                <div class="metric">
-                    <strong>4</strong>
-                    <span>Housings processed on each tray</span>
-                </div>
-
-                <div class="metric">
-                    <strong>25</strong>
-                    <span>Pneumatic outlets in three rings</span>
-                </div>
-            </div>
-
-            <div class="brief-grid membrane-brief-grid">
-                <article>
-                    <p class="card-label">The problem</p>
-                    <h3>Waterproof the microphone without changing its acoustic response</h3>
-                    <p>
+</div>
+<div aria-label="Project results" class="metric-row">
+<div class="metric metric-accent">
+<strong>40% → 98%</strong>
+<span>Production yield</span>
+</div>
+<div class="metric">
+<strong>4×</strong>
+<span>Faster than manual gluing</span>
+</div>
+<div class="metric">
+<strong>4</strong>
+<span>Housings processed on each tray</span>
+</div>
+<div class="metric">
+<strong>25</strong>
+<span>Pneumatic outlets in three rings</span>
+</div>
+</div>
+<div class="brief-grid membrane-brief-grid">
+<article>
+<p class="card-label">The problem</p>
+<h3>Waterproof the microphone without changing its acoustic response</h3>
+<p>
                         An existing microphone needed thin membranes bonded directly to the front
                         and rear housings. Each seal required a circular adhesive bead followed by
                         accurate placement and controlled pressure around the complete membrane lip.
                     </p>
-                    <p>
+<p>
                         Manual gluing produced variable bead width and occasional blobs. Excess
                         adhesive could move away from the circular lip and across the membrane,
                         causing inconsistent frequency-response results during acoustic testing.
@@ -499,840 +355,737 @@
                         could be salvaged while the housings had to be discarded, wasting labor
                         and production time.
                     </p>
-                </article>
-
-                <article>
-                    <p class="card-label">The complete response</p>
-                    <h3>Control every stage instead of relying on individual operator technique</h3>
-                    <p>
+</article>
+<article>
+<p class="card-label">The solution</p>
+<h3>Automate the process and develop customized tooling</h3>
+<p>
                         I replaced the hand-gluing operation with a robot program and designed
                         removable four-part trays that locate the housings beneath the dispensing
                         needle. I then replaced the upward-facing vacuum jig with hand-held
                         vacuum/pressure stamps, a four-way pneumatic valve, UV curing and final
                         pressure testing.
                     </p>
-                    <p>
+<p>
                         The same tray remains with all four housings after gluing. The operator no
                         longer removes and flips each housing individually, reducing handling and
                         keeping every part in a known position throughout the process. The aim was
                         maximum consistency between operators, with every assembly remaining within
                         the required acceptance band.
                     </p>
-                </article>
-            </div>
-
-            <div class="visual-heading robot-heading">
-                <div>
-                    <p class="section-label">Robotic adhesive dispensing</p>
-                    <h3>A repeatable circular path across four housings</h3>
-                </div>
-
-                <p>
-                    The adhesive path is programmed as two connected arcs. Dispensing begins before
-                    the first arc and stops after the second; the robot then traces the same circle
-                    twice with the dispenser off to spread the adhesive evenly. Horizontal and
-                    vertical moves then index to the remaining housings on the four-part tray.
-                </p>
-            </div>
-
-            <div class="membrane-process-layout">
-            <div class="process-comparison">
-                <article class="process-comparison-card">
-                    <p class="card-label">Original membrane process</p>
-                    <h3>Vacuum or off was not enough</h3>
-                    <p>
+</article>
+</div>
+<div class="visual-heading robot-heading">
+<div>
+<p class="section-label">Robotic adhesive dispensing</p>
+<h3>A repeatable circular path across four housings</h3>
+</div>
+<p>The robot controlled the dispensing needle in three axes. It applied adhesive along the housing path, stopped dispensing and retraced the path to spread the glue evenly, then lifted clear of the housing and moved to the next one to repeat the process.</p>
+</div>
+<div class="membrane-process-layout">
+<div class="process-comparison">
+<article class="process-comparison-card">
+<p class="card-label">Original membrane process</p>
+<h3>Vacuum or off was not enough</h3>
+<p>
                         The original fixture faced upward. An operator positioned a membrane with
                         tweezers, slowly flattened it against six vacuum holes, then pressed a glued
                         housing down onto it. Turning off the suction was expected to leave the
                         membrane attached to the housing.
                     </p>
-                    <p>
+<p>
                         Pressure was difficult to apply evenly around the seal. Adhesive was often
                         squeezed onto the fixture, allowing the membrane to remain stuck to the jig
                         instead of the housing. The six vacuum points also allowed wrinkles that could
                         alter the later acoustic response.
                     </p>
-                </article>
-
-                <article class="process-comparison-card process-comparison-card-accent">
-                    <p class="card-label">Redesigned membrane process</p>
-                    <h3>Vacuum, neutral and positive pressure</h3>
-                    <p>
+</article>
+<article class="process-comparison-card process-comparison-card-accent">
+<p class="card-label">Redesigned membrane process</p>
+<h3>Vacuum, neutral and positive pressure</h3>
+<p>
                         The new hand-held stamp uses vacuum to collect the membrane, neutral pressure
                         while it is brought onto the adhesive, and positive pressure to release it
                         deliberately onto the housing. This third state prevents the stamp from
                         depending on passive release.
                     </p>
-                    <p>
+<p>
                         A four-way valve selects the state. In its center position both supplies are
                         blocked, while the Dymax 5 relief valve protects the pneumatic source. In the
                         air and vacuum positions, the unused supply is redirected through the hidden
                         fourth port under the valve to atmosphere.
                     </p>
-                </article>
-            </div>
-
-                <figure class="image-card valve-photo-card">
-                    <img
-                        src="assets/vacuum-stamp-setup-compressed.jpg"
-                        alt="Real membrane-application station showing the four-way valve beneath the Dymax 5 and the manufactured stamp"
-                        loading="lazy"
-                        decoding="async"
-                    >
-                    <figcaption>
+</article>
+</div>
+<figure class="image-card valve-photo-card">
+<img alt="Real membrane-application station showing the four-way valve beneath the Dymax 5 and the manufactured stamp" decoding="async" loading="lazy" src="assets/vacuum-stamp-setup-compressed.jpg"/>
+<figcaption>
                         Manufactured front stamp with the Dymax 5 pneumatic source and four-way control
                         valve used for vacuum, neutral and positive-pressure operation.
                     </figcaption>
-                </figure>
-            </div>
-
-            <div class="visual-heading stamp-geometry-heading">
-                <div>
-                    <p class="section-label">Stamp geometry &amp; internal channels</p>
-                    <h3>Front and rear tools, outside and inside</h3>
-                </div>
-                <p>
+</figure>
+</div>
+<div class="visual-heading stamp-geometry-heading">
+<div>
+<p class="section-label">Stamp geometry &amp; internal channels</p>
+<h3>Front and rear tools, outside and inside</h3>
+</div>
+<p>
                     Both stamps combine a secure grip, alignment guides and a mechanical depth stop.
                     Internal channels divide one pneumatic connection into 25 outlets in three rings,
                     supporting the membrane more evenly than the original six-hole jig and reducing wrinkles.
                 </p>
-            </div>
-
-            <div class="stamp-comparison-row">
-                <figure class="image-card stamp-pair">
-                    <div class="paired-visual">
-                        <div class="paired-item">
-                            <span>Front stamp</span>
-                            <img src="assets/vacuum-stamp-front-compressed.png" alt="Front microphone membrane vacuum stamp CAD model" loading="lazy" decoding="async">
-                        </div>
-                        <div class="paired-item">
-                            <span>Rear stamp</span>
-                            <img src="assets/vacuum-stamp-rear-compressed.png" alt="Rear microphone membrane vacuum stamp CAD model" loading="lazy" decoding="async">
-                        </div>
-                    </div>
-                    <figcaption><strong>External tool geometry</strong>Interface-specific tools with the same operating principle.</figcaption>
-                </figure>
-                <figure class="image-card stamp-pair">
-                    <div class="paired-visual">
-                        <div class="paired-item">
-                            <span>Front cross-section</span>
-                            <img src="assets/vacuum-stamp-front-cross-section-compressed.png" alt="Front stamp cross-section showing the internal pneumatic passages" loading="lazy" decoding="async">
-                        </div>
-                        <div class="paired-item">
-                            <span>Rear cross-section</span>
-                            <img src="assets/vacuum-stamp-rear-cross-section-compressed.png" alt="Rear stamp cross-section showing the internal pneumatic passages" loading="lazy" decoding="async">
-                        </div>
-                    </div>
-                    <figcaption><strong>Distributed pneumatic channels</strong>The central passage divides into three outlet rings.</figcaption>
-                </figure>
-            </div>
-
-            <div class="decision-grid stamp-feature-grid">
-                <article>
-                    <span>1</span>
-                    <h3>Full-length knurled grip</h3>
-                    <p>
-                        Knurling across the body gives the operator a secure hold, reducing unwanted
-                        movement and making controlled placement easier.
-                    </p>
-                </article>
-
-                <article>
-                    <span>2</span>
-                    <h3>High-contrast contact face</h3>
-                    <p>
+</div>
+<div class="stamp-comparison-row">
+<figure class="image-card stamp-pair">
+<div class="paired-visual">
+<div class="paired-item">
+<span>Front stamp</span>
+<img alt="Front microphone membrane vacuum stamp CAD model" decoding="async" loading="lazy" src="assets/vacuum-stamp-front-compressed.png"/>
+</div>
+<div class="paired-item">
+<span>Rear stamp</span>
+<img alt="Rear microphone membrane vacuum stamp CAD model" decoding="async" loading="lazy" src="assets/vacuum-stamp-rear-compressed.png"/>
+</div>
+</div>
+<figcaption><strong>External tool geometry</strong>Interface-specific tools with the same operating principle.</figcaption>
+</figure>
+<figure class="image-card stamp-pair">
+<div class="paired-visual">
+<div class="paired-item">
+<span>Front cross-section</span>
+<img alt="Front stamp cross-section showing the internal pneumatic passages" decoding="async" loading="lazy" src="assets/vacuum-stamp-front-cross-section-compressed.png"/>
+</div>
+<div class="paired-item">
+<span>Rear cross-section</span>
+<img alt="Rear stamp cross-section showing the internal pneumatic passages" decoding="async" loading="lazy" src="assets/vacuum-stamp-rear-cross-section-compressed.png"/>
+</div>
+</div>
+<figcaption><strong>Distributed pneumatic channels</strong>The central passage divides into three outlet rings.</figcaption>
+</figure>
+</div>
+<div class="decision-grid stamp-feature-grid">
+<article>
+<span>1</span>
+<h3>Knurled surface</h3>
+<p>Knurling across the body let the operator hold the tool securely with a light grip, preventing unwanted shaking and making membrane placement more consistent.</p>
+</article>
+<article>
+<span>2</span>
+<h3>High-contrast contact face</h3>
+<p>
                         The surface touching the membrane is printed black. The contrast makes it
                         immediately obvious whether a thin membrane is present and correctly located.
                     </p>
-                </article>
-
-                <article>
-                    <span>3</span>
-                    <h3>Three-ring flow distribution</h3>
-                    <p>
+</article>
+<article>
+<span>3</span>
+<h3>Three-ring flow distribution</h3>
+<p>
                         Twenty-five outlets replace the original six vacuum holes, spreading support
                         across the membrane and sharply reducing wrinkles.
                     </p>
-                </article>
-
-                <article>
-                    <span>4</span>
-                    <h3>Parallel alignment guides</h3>
-                    <p>
+</article>
+<article>
+<span>4</span>
+<h3>Parallel alignment guides</h3>
+<p>
                         External legs keep the contact surface parallel to the adhesive ring so one
                         side cannot receive more pressure than the other.
                     </p>
-                </article>
-
-                <article>
-                    <span>5</span>
-                    <h3>Operator visibility</h3>
-                    <p>
+</article>
+<article>
+<span>5</span>
+<h3>Operator visibility</h3>
+<p>
                         Gaps between the guide legs let the operator see the stamp approach and learn
                         the correct placement motion without obscuring the joint.
                     </p>
-                </article>
-
-                <article>
-                    <span>6</span>
-                    <h3>Mechanical depth stop</h3>
-                    <p>
-                        Guide height creates a hard stop. Even at maximum hand force, the membrane can
-                        only travel to the experimentally established depth, making continuous contact
-                        without squeezing adhesive across the membrane.
-                    </p>
-                </article>
-            </div>
-
-            <div class="membrane-release-panel">
-                <div class="built-copy">
-                    <p class="section-label">Built &amp; implemented</p>
-                    <h3>Trial, manufacture and production release</h3>
-                    <p>
+</article>
+<article>
+<span>6</span>
+<h3>Mechanical depth stop</h3>
+<p>Guide height creates a mechanical stop, limiting the stamp to the experimentally established placement depth without squeezing adhesive across the membrane. Changing the offset by 0.1 mm could change yield by 15%, so the front and rear tools were tuned independently.</p>
+</article>
+</div>
+<div class="membrane-release-panel">
+<div class="built-copy">
+<p class="section-label">Built &amp; implemented</p>
+<h3>Trial, manufacture and production release</h3>
+<p>
                         The mechanical-stop height was established separately for the front and rear
                         housings through physical trials. Each tool had to press firmly enough to close
                         the complete adhesive ring without pushing material into the acoustic area.
                     </p>
-                    <p>
+<p>
                         The finished stamps were connected to the Dymax 5 through the four-way valve
                         and introduced with the robot trays, curing process and pressure verification.
                         The process was then adapted for additional microphone variants.
                     </p>
-                </div>
-
-
-            </div>
-
-            <div class="outcome-panel">
-                <p class="section-label">Outcome</p>
-                <strong>Production yield increased from 40% to 98%.</strong>
-                <p>
+</div>
+</div>
+<div class="outcome-panel">
+<p class="section-label">Outcome</p>
+<strong>Production yield increased from 40% to 98%.</strong>
+<p>
                     Automated gluing was four times faster than manual operator gluing. The complete station made adhesive coverage, membrane pressure and release
                     repeatable while reducing acoustic rejects, material waste and rework.
                 </p>
-            </div>
-        </section>
+</div>
+</section>
+<section class="project" id="tooling">
+<header class="project-header">
+<div><div class="project-heading-line"><p aria-hidden="true" class="project-number">3</p><p class="project-kicker">Production Equipment · Industry</p></div>
 
-        <section class="project" id="tooling">
-            <header class="project-header">
-                <div>
-                    <p class="project-kicker">Production Tooling · Industry</p>
-                    <p class="project-context">Fixtures shaped around the operator and the process</p>
-                </div>
+<p class="project-context">Fixtures shaped around the operator and the process</p>
+</div>
 
-                <p class="project-number" aria-hidden="true">3</p>
-            </header>
+</header>
+<div class="project-title-grid tooling-project-title">
+<h2>Production Jigs and Fixtures</h2>
 
-            <div class="project-title-grid tooling-project-title">
-                <h2>Production Jigs and Fixtures</h2>
-
-                <p class="project-summary">
-                    Rapidly developed tooling that controls the critical geometry of each operation
-                    while keeping production fast, intuitive and maintainable.
-                </p>
-            </div>
-
-            <article class="tooling-case demagnetizer-case" id="demagnetizer">
-                <div class="tooling-title">
-                    <p class="case-number">3A</p>
-                    <div>
-                        <p class="section-label">Microphone processing</p>
-                        <h3>Universal Demagnetizing Fixture</h3>
-                    </div>
-                </div>
-
-                <div class="split-case split-case-reverse demagnetizer-layout">
-                    <div class="case-copy">
-                        <p class="card-label">The requirement</p>
-                        <p>
+</div>
+<article class="tooling-case demagnetizer-case" id="demagnetizer">
+<div class="tooling-title">
+<p class="case-number">3A</p>
+<div>
+<p class="section-label">Microphone processing</p>
+<h3>Universal Demagnetizing Fixture</h3>
+</div>
+</div>
+<div class="split-case split-case-reverse demagnetizer-layout">
+<div class="case-copy">
+<p class="card-label">The requirement</p>
+<p>
                             Several microphone variants had to be held at a repeatable height above an
                             electromagnet. Each microphone sits in the black spring-contact tray shown
                             above the blue fixture in the production photograph. Spring force changes
                             the closed tray height between variants and also tries to push the tray back
                             out of the fixture.
                         </p>
-
-                        <p class="card-label card-label-spaced">Problem with the original jig</p>
-                        <p>
+<p class="card-label card-label-spaced">Problem with the original jig</p>
+<p>
                             The earlier station used a latch to resist the spring force. Inserting or
                             removing a tray required one hand to operate the latch and a second to hold
                             the tray, slowing a highly repetitive production task.
                         </p>
-
-                        <p class="card-label card-label-spaced">The mechanism</p>
-                        <p>
+<p class="card-label card-label-spaced">The mechanism</p>
+<p>
                             I replaced the latch with an adjustable friction bridge. The operator pushes
                             the tray past light friction with one hand, and that same friction holds the
                             tray at a controlled field position. An indexed screw is adjusted once for
                             the microphone variant at the start of a production run and remains fixed
                             for the whole batch.
                         </p>
-
-                        <p class="card-label card-label-spaced">The outcome</p>
-                        <p>
+<p class="card-label card-label-spaced">The outcome</p>
+<p>
                             The additively manufactured fixture became a faster, universal station for
                             multiple tray heights and was introduced at the supplier for production use.
                         </p>
-                    </div>
-
-                    <div class="image-grid image-grid-stacked demagnetizer-images">
-                        <figure class="image-card cad-card demagnetizer-cad-card">
-                            <div class="image-viewport">
-                                <img
-                                    src="assets/demagnetiser-compressed.png"
-                                    alt="CAD model of the universal microphone demagnetizing fixture"
-                                    loading="lazy"
-                                    decoding="async"
-                                >
-                            </div>
-                            <figcaption>
-                                <strong>Adjustable fixture CAD</strong>
+</div>
+<div class="image-grid image-grid-stacked demagnetizer-images">
+<figure class="image-card cad-card demagnetizer-cad-card">
+<div class="image-viewport">
+<img alt="CAD model of the universal microphone demagnetizing fixture" decoding="async" loading="lazy" src="assets/demagnetiser-compressed.png"/>
+</div>
+<figcaption>
+<strong>Adjustable fixture CAD</strong>
                                 The bridge accommodates several spring-contact tray heights while
                                 preserving a consistent position above the electromagnet.
                             </figcaption>
-                        </figure>
-
-                        <figure class="image-card demagnetizer-photo-card">
-                            <img
-                                src="assets/demagnetiser-printed-compressed.jpeg?v=20261017-crop"
-                                alt="Manufactured demagnetizing fixture with the black spring-contact tray visible above it"
-                                loading="lazy"
-                                decoding="async"
-                            >
-                            <figcaption>
-                                <strong>Production installation</strong>
+</figure>
+<figure class="image-card demagnetizer-photo-card">
+<img alt="Manufactured demagnetizing fixture with the black spring-contact tray visible above it" decoding="async" loading="lazy" src="assets/demagnetiser-printed-compressed.jpeg?v=20261017-crop"/>
+<figcaption>
+<strong>Production installation</strong>
                                 The black spring-contact tray slides into the blue printed fixture above
                                 the electromagnet; product information has been obscured.
                             </figcaption>
-                        </figure>
-                    </div>
-                </div>
-            </article>
-
-            <article class="tooling-case pin-jig-case" id="pin-jig">
-                <div class="tooling-title">
-                    <p class="case-number">3B</p>
-                    <div>
-                        <p class="section-label">Roll-pin insertion</p>
-                        <h3 class="tooling-title-compact">Repeatable Assembly from Awkward Manual Operations</h3>
-                    </div>
-                </div>
-
-                <div class="tooling-copy-grid">
-                    <div>
-                        <p class="card-label">Requirement</p>
-                        <p>
-                            Assemble two components with two roll pins simultaneously using an existing
-                            hand press. Both pins had to remain directly above their holes throughout
-                            the stroke without permanently modifying the press.
-                        </p>
-                    </div>
-
-                    <div>
-                        <p class="card-label">Design response</p>
-                        <p>
+</figure>
+</div>
+</div>
+</article>
+<article class="tooling-case pin-jig-case" id="pin-jig">
+<div class="tooling-title">
+<p class="case-number">3B</p>
+<div>
+<p class="section-label">Roll-pin insertion</p>
+<h3 class="tooling-title-compact">Repeatable Assembly from Awkward Manual Operations</h3>
+</div>
+</div>
+<div class="tooling-copy-grid">
+<div>
+<p class="card-label">Requirement</p>
+<p>Assemble two components with two roll pins simultaneously using an existing hand press. The pins had to remain aligned with their holes throughout the stroke. The supplier variant bolts onto its press; the in-house variant clips onto ours.</p>
+</div>
+<div>
+<p class="card-label">Design response</p>
+<p>
                             The fixture separates the functions into a fixed base, a replaceable
                             alignment bridge and an upper press attachment. Steel guide rods pass
                             through the bridge to drive both pins into the suspension assembly.
                         </p>
-                    </div>
-
-                    <div>
-                        <p class="card-label">Maintainability</p>
-                        <p>
+</div>
+<div>
+<p class="card-label">Maintainability</p>
+<p>
                             The bridge contains the guide holes and is intentionally replaceable. If
                             those holes wear, alignment can be restored without remaking the entire jig.
                         </p>
-                    </div>
+</div>
+<div>
+<p class="card-label">Implementation</p>
+<p>Most components were 3D printed, with steel used in the pin-driving load path. The supplier fixture was bolted to its hand press, while the in-house fixture clipped onto our press and located through the bed.</p>
+</div>
+</div>
 
-                    <div>
-                        <p class="card-label">Implementation</p>
-                        <p>
-                            Most components were 3D printed, with steel used in the pin-driving load
-                            path. The production fixture clips to the press and locates through the bed,
-                            creating a controlled process from existing equipment.
-                        </p>
-                    </div>
-                </div>
+<div class="pin-gallery pin-variant-gallery">
+<div class="pin-variant">
+<h4>Supplier variant · bolted mounting</h4>
+<div class="pin-variant-images">
+<figure class="image-card cad-card pin-cad-card">
+<div class="image-viewport"><img alt="CAD of the supplier roll-pin jig designed to bolt onto its hand press" decoding="async" loading="lazy" src="assets/pin-jig-compressed.png"/></div>
+<figcaption><strong>Supplier fixture CAD</strong>Base, replaceable bridge and press attachment for the bolted variant.</figcaption>
+</figure>
+<figure class="image-card pin-supplier-card">
+<img alt="Manufactured bolted supplier fixture with its press attachment and replaceable bridges" decoding="async" loading="lazy" src="assets/printed-pin-press-bolted-version-compressed.png"/>
+<figcaption><strong>Printed supplier variant</strong>The manufactured fixture and components for bolted mounting on the supplier's hand press.</figcaption>
+</figure>
+</div>
+</div>
+<div class="pin-variant">
+<h4>In-house variant · clip-on mounting</h4>
+<div class="pin-variant-images">
+<figure class="image-card pin-components-card">
+<img alt="Manufactured clip-on roll-pin fixture and replaceable components" decoding="async" loading="lazy" src="assets/pin-jig-clipped-version-compressed.jpg"/>
+<figcaption><strong>Clip-on components</strong>The in-house variant attaches to our press without bolting it down.</figcaption>
+</figure>
+<figure class="image-card pin-installed-card">
+<img alt="In-house roll-pin fixture clipped onto the hand press" decoding="async" loading="lazy" src="assets/printed-pin-press-compressed.jpeg"/>
+<figcaption><strong>Clipped onto our press</strong>The in-house tooling installed for production use.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</article>
+</section>
+<section class="project" id="life-test">
+<header class="project-header">
+<div><div class="project-heading-line"><p aria-hidden="true" class="project-number">4</p><p class="project-kicker">Test Equipment · Industry</p></div>
 
-                <div class="pin-gallery">
-                    <figure class="image-card cad-card pin-cad-card">
-                        <div class="image-viewport">
-                            <img src="assets/pin-jig-compressed.png" alt="CAD model of the roll-pin insertion fixture" loading="lazy" decoding="async">
-                        </div>
-                        <figcaption>
-                            <strong>CAD assembly</strong>
-                            Base, replaceable bridge and moving press attachment shown at a useful scale.
-                        </figcaption>
-                    </figure>
+<p class="project-context">Adaptable long-duration durability testing</p>
+</div>
 
-                    <figure class="image-card pin-components-card">
-                        <img src="assets/pin-jig-clipped-version-compressed.jpg" alt="Manufactured roll-pin fixture and replaceable components" loading="lazy" decoding="async">
-                        <figcaption>
-                            <strong>Manufactured components</strong>
-                            Complete base, press attachment and replaceable bridges with steel guide rods.
-                        </figcaption>
-                    </figure>
-
-                    <figure class="image-card pin-installed-card">
-                        <img src="assets/printed-pin-press-compressed.jpeg" alt="Roll-pin insertion fixture installed on a hand press" loading="lazy" decoding="async">
-                        <figcaption>
-                            <strong>Installed tooling</strong>
-                            The jig mounted to the existing hand press for production use.
-                        </figcaption>
-                    </figure>
-                </div>
-            </article>
-        </section>
-
-        <section class="project" id="life-test">
-            <header class="project-header">
-                <div>
-                    <p class="project-kicker">Verification Engineering · Industry</p>
-                    <p class="project-context">Adaptable long-duration durability testing</p>
-                </div>
-
-                <p class="project-number" aria-hidden="true">4</p>
-            </header>
-
-            <div class="project-title-grid">
-                <h2>Life-Test Fixture</h2>
-
-                <p class="project-summary">
+</header>
+<div class="project-title-grid">
+<h2>Life-Test Fixture</h2>
+<p class="project-summary">
                     A maintainable, adjustable test platform for repeatedly flexing different product
                     components through programmable distances when existing equipment could not
                     reproduce the required long-duration loading.
                 </p>
-            </div>
-
-            <div class="split-case split-case-cad life-test-layout">
-                <div class="case-copy">
-                    <p class="card-label">The requirement</p>
-                    <h3>Adapt one fixture to multiple parts and flex distances</h3>
-                    <p>
+</div>
+<div class="split-case split-case-cad life-test-layout">
+<div class="case-copy">
+<p class="card-label">The requirement</p>
+<h3>Adapt one fixture to multiple parts and flex distances</h3>
+<p>
                         Products qualified for demanding service environments also require life testing
                         to demonstrate long-term mechanical durability. The rig had to accommodate
                         different components, mounting positions and flex distances while remaining
                         easy to repair after a very high number of cycles.
                     </p>
-
-                    <p class="card-label card-label-spaced">Adjustable actuation</p>
-                    <p>
+<p class="card-label card-label-spaced">Adjustable actuation</p>
+<p>
                         The linear actuator mount can move laterally and vertically to align with
                         different test articles. Stroke distance is programmed electronically; when a
                         required position lies outside the actuator's available travel, its mounting
                         block can be relocated along the repeated hole pattern.
                     </p>
-
-                    <p class="card-label card-label-spaced">Maintainable structure</p>
-                    <p>
+<p class="card-label card-label-spaced">Maintainable structure</p>
+<p>
                         Sheet-metal plates are joined with replaceable corner brackets, through-bolts
                         and nuts rather than permanent joints. Black printed covers protect the exposed
                         bracket geometry. An electronics enclosure on the reverse side contains the
                         actuator power supply and programming connection.
                     </p>
-
-                    <ul class="feature-list">
-                        <li>Rigid but fully serviceable bolted sheet-metal structure</li>
-                        <li>Adjustable actuator position in multiple axes</li>
-                        <li>Programmable stroke for different flex requirements</li>
-                        <li>Relocatable mounting block extends the usable test range</li>
-                    </ul>
-                </div>
-
-                <figure class="image-card cad-card tall-feature life-test-cad-card">
-                    <img src="assets/life-tester-no-background-compressed.png" alt="CAD assembly of the adaptable life-test fixture" loading="lazy" decoding="async">
-                    <figcaption>
-                        <strong>Complete test-rig CAD</strong>
+<ul class="feature-list">
+<li>Rigid but fully serviceable bolted sheet-metal structure</li>
+<li>Adjustable actuator position in multiple axes</li>
+<li>Programmable stroke for different flex requirements</li>
+<li>Relocatable mounting block extends the usable test range</li>
+</ul>
+</div>
+<figure class="image-card cad-card tall-feature life-test-cad-card">
+<img alt="CAD assembly of the adaptable life-test fixture" decoding="async" loading="lazy" src="assets/life-tester-no-background-compressed.png"/>
+<figcaption>
+<strong>Complete test-rig CAD</strong>
                         Actuator, adjustable supports and protected bolted structure packaged into a
                         single maintainable fixture.
                     </figcaption>
-                </figure>
-            </div>
-
-            <div class="life-test-built-panel">
-                <div>
-                    <p class="section-label">Built hardware</p>
-                    <h3>Designed for reconfiguration and repeated maintenance</h3>
-                    <p>
+</figure>
+</div>
+<div class="life-test-built-panel">
+<div>
+<p class="section-label">Built hardware</p>
+<h3>Designed for reconfiguration and repeated maintenance</h3>
+<p>
                         The manufactured fixture uses the same adjustable actuator layout and bolted
                         panel construction shown in CAD. The selected photograph omits sensitive
                         product information while showing the production-scale structure and actuator.
                     </p>
-                </div>
-
-                <figure class="image-card life-test-photo-card">
-                    <img src="assets/life-tester-close-up-compressed.jpg?v=20261017-crop" alt="Manufactured life-test fixture showing its adjustable linear actuator" loading="lazy" decoding="async">
-                    <figcaption>
+</div>
+<figure class="image-card life-test-photo-card">
+<img alt="Manufactured life-test fixture showing its adjustable linear actuator" decoding="async" loading="lazy" src="assets/life-tester-close-up-compressed.jpg?v=20261017-crop"/>
+<figcaption>
                         Manufactured fixture with the linear actuator, support brackets and repeated
                         mounting positions visible.
                     </figcaption>
-                </figure>
-            </div>
-        </section>
+</figure>
+</div>
+<article class="work-card additional-test-card">
+<p class="work-tag">Custom test development</p>
+<h3>Helmet Softliner Compression</h3>
+<p>
+                        Designed cyclic-compression testing for two helmet softliners, using a mechanical
+                        roller to apply thousands of repeatable load cycles where standard equipment did
+                        not reproduce the required condition.
+                    </p>
+</article></section>
+<section class="project academic-project thermodynamic-project" id="thermodynamics">
+<header class="project-header">
+<div><div class="project-heading-line"><p aria-hidden="true" class="project-number">5</p><p class="project-kicker">Thermodynamic Research</p></div>
 
-        <section class="project academic-project" id="aerospace">
-            <header class="project-header">
-                <div>
-                    <p class="project-kicker">Aerodynamic Design · BEng</p>
-                    <p class="project-context">University of Surrey · Formula Student</p>
-                </div>
+<p class="project-context">BEng Aerospace Engineering · University of Surrey</p>
+</div>
 
-                <p class="project-number" aria-hidden="true">5</p>
-            </header>
+</header>
+<div class="project-title-grid">
+<h2>Cooling-Fin Design for an Electric Ducted Fan</h2>
+<p class="project-summary">An independent academic study combining CAD, thermal analysis and aerodynamic CFD to balance motor cooling, drag and weight.</p>
+</div>
+<div class="thermo-intro-grid">
+<figure class="image-card thermo-geometry-card">
+<img alt="Duct working area with a central motor, showing its length and inner and outer diameters" decoding="async" loading="lazy" src="assets/duct-geometry.png"/>
+<figcaption><strong>Initial working geometry</strong> A 1.071 m-long region, with a 1.27 m duct diameter and a 0.38 m motor diameter.</figcaption>
+</figure>
+<div class="thermo-intro-copy">
+<p class="card-label">Electric propulsion · 2018</p>
+<h3>Use the support structure to remove heat</h3>
+<p>The E-Fan X demonstrator, developed by Airbus, Rolls-Royce and Siemens, proposed replacing one of a BAe 146 aircraft's four jet engines with a 2 MW electric motor. This university project used that concept as the context for a simplified cooling study.</p>
+<p>Without the actual duct geometry, I simplified the working region to an annular tube and investigated motor-support struts used simultaneously as cooling fins. My model assumed a 1 MW motor and 30 kW of waste heat, distinct from the demonstrator specification. The design problem was to conduct heat into the fins, then transfer it to the passing air by convection without excessive flow resistance.</p>
+</div>
+</div>
+<div class="visual-heading">
+<p class="section-label">Thermodynamic trial</p>
+<h3>Establish the heat-transfer model</h3>
+<p>Heat conducts through the solid motor and fins, then passes into the moving air by convection. Early SimScale trials established the mesh, thermal interfaces and boundary conditions before refining the geometry.</p>
+</div>
+<figure class="image-card thermo-wide-card">
+<img alt="Cooling-fin CAD sector on the left, CFD mesh in the middle and temperature field on the right" decoding="async" loading="lazy" src="assets/thermodynamic-trial-run.png"/>
+<figcaption><strong>Thermal-model development</strong> Geometry, mesh and temperature plots used to check the simulation setup.</figcaption>
+</figure>
+<div class="visual-heading">
+<p class="section-label">Thermodynamic optimization</p>
+<h3>Compare fin geometry and spacing</h3>
+<p>I increased material near the motor and compared repeated fin arrangements. Symmetry sectors reduced computation while retaining the inlet velocity and pressure-outlet conditions; heat input scaled with the sector’s share of the full motor.</p>
+</div>
+<figure class="image-card thermo-wide-card">
+<img alt="Three increasingly narrow cooling-fin sectors, representing 8, 16 and 32 fins from left to right" decoding="async" loading="lazy" src="assets/thermodynamic-optimization.png"/>
+<figcaption><strong>Repeated fin arrangements</strong> Left to right: symmetric sectors representing 8, 16 and 32 fins in the complete duct.</figcaption>
+</figure>
+<div class="brief-grid thermo-findings-grid">
+<article>
+<p class="card-label">Large-model finding</p>
+<p>Even the 32-fin configuration did not reach thermal equilibrium at nominal heating within the modeled 2,000 s. Fin-only cooling was not demonstrated for this large-motor case; another approach, such as liquid cooling, would need investigation.</p>
+</article>
+<article>
+<p class="card-label">A smaller reference model</p>
+<p>I redirected the study to a 195 mm Schübeler EDF. With an assumed 500 W heat load, the report records equilibrium at 412 K for the baseline model.</p>
+</article>
+</div>
+<div class="visual-heading">
+<p class="section-label">Aerodynamic optimization</p>
+<h3>Reduce the cooling fins’ drag</h3>
+<p>I replaced the rectangular baseline with three streamlined airfoil-section variants of similar average thickness. Four design variants were compared for viscous and pressure drag, with further thermal checks around the thinner leading and trailing edges.</p>
+</div>
+<figure class="image-card thermo-wide-card thermo-aero-card">
+<img alt="Aerofoil cooling-fin design variants and a thermal field, including the original temperature legend" decoding="async" loading="lazy" src="assets/aerodynamic-optimization.png"/>
+<figcaption><strong>Geometry and thermal response</strong>Airfoil-section CAD and a qualitative temperature field. The original composite is shown without cropping its legend.</figcaption>
+</figure>
+<div class="thermo-table-wrap">
+<div aria-label="Cooling-fin drag comparison" class="thermo-table-scroll" role="region" tabindex="0"><table aria-describedby="thermo-table-note" class="thermo-results-table">
+<caption>Four CFD design variants: simulated drag forces in the −y direction.</caption>
+<thead>
+<tr><th scope="col">Design</th><th scope="col">Viscous (N)</th><th scope="col">Pressure (N)</th><th scope="col">Reported total (N)</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">D5.1</th><td>8.5</td><td>17.2</td><td>25.7</td></tr>
+<tr class="thermo-lowest"><th scope="row">D5.2 <span class="thermo-result-label">Lowest reported</span></th><td>6.2</td><td>9.3</td><td>15.8</td></tr>
+<tr><th scope="row">D5.3</th><td>8.3</td><td>11.7</td><td>20.0</td></tr>
+<tr><th scope="row">D5.4</th><td>7.9</td><td>8.3</td><td>16.2</td></tr>
+</tbody>
+</table></div>
+<p class="thermo-table-note" id="thermo-table-note">Original report values. D5.2’s components sum to 15.5 N; its reported total is 15.8 N.</p>
+</div>
+<p class="thermo-outcome">The study established a comparative CFD workflow for balancing conduction, convection and drag. It did not provide an experimentally validated production cooling system.</p>
+</section><section class="project academic-project" id="aerospace">
+<header class="project-header">
+<div><div class="project-heading-line"><p aria-hidden="true" class="project-number">6</p><p class="project-kicker">Formula Student</p></div>
 
-            <div class="project-title-grid">
-                <h2>Formula Student Rear-Wing Development</h2>
+<p class="project-context">Aerodynamic design · BEng Aerospace Engineering · University of Surrey</p>
+</div>
 
-                <p class="project-summary">
-                    A three-element rear wing developed from first principles through 28 CAD and CFD
+</header>
+<div class="project-title-grid">
+<h2>Formula Student Rear-Wing Development</h2>
+<p class="project-summary">A three-element rear wing developed through 28 CAD and CFD
                     iterations for the University of Surrey Formula Student car. The team placed fifth
-                    overall in the UK competition.
-                </p>
-            </div>
-
-            <div class="metric-row" aria-label="Formula Student project results">
-                <div class="metric metric-accent">
-                    <strong>28</strong>
-                    <span>Aerodynamic design iterations</span>
-                </div>
-                <div class="metric">
-                    <strong>130&nbsp;N</strong>
-                    <span>Required downforce at 12 m/s</span>
-                </div>
-                <div class="metric">
-                    <strong>≈&nbsp;180&nbsp;N</strong>
-                    <span>Final isolated-wing downforce</span>
-                </div>
-                <div class="metric">
-                    <strong>5th</strong>
-                    <span>Overall in the UK competition</span>
-                </div>
-            </div>
-
-            <div class="brief-grid formula-brief-grid">
-                <article>
-                    <p class="card-label">Design requirements</p>
-                    <h3>Produce a measurable net benefit within Formula Student constraints</h3>
-                    <p>
+                    overall in the UK competition.</p>
+</div>
+<div aria-label="Formula Student project results" class="metric-row">
+<div class="metric metric-accent">
+<strong>28</strong>
+<span>Aerodynamic design iterations</span>
+</div>
+<div class="metric">
+<strong>130 N</strong>
+<span>Required downforce at 12 m/s</span>
+</div>
+<div class="metric">
+<strong>≈ 180 N</strong>
+<span>Final isolated-wing downforce</span>
+</div>
+<div class="metric">
+<strong>5th</strong>
+<span>Overall in the UK competition</span>
+</div>
+</div>
+<div class="brief-grid formula-brief-grid">
+<article>
+<p class="card-label">Design requirements</p>
+<h3>Produce a measurable net benefit within Formula Student constraints</h3>
+<p>
                         The rear wing had to exceed 130 N downforce at 12 m/s, cost no more than £660,
                         remain below 8 kg excluding DRS and swan-neck mounts, and achieve a high-quality
                         surface finish while satisfying the rulebook's working-volume, edge-radius,
                         strength and stability requirements.
                     </p>
-                </article>
-
-                <article>
-                    <p class="card-label">Why three elements</p>
-                    <h3>The Formula Student problem was not a scaled Formula 1 problem</h3>
-                    <p>
+</article>
+<article>
+<p class="card-label">Why three elements</p>
+<h3>The Formula Student problem was not a scaled Formula 1 problem</h3>
+<p>
                         A comparison with Formula 1 showed that the Formula Student working volume was
                         205% larger while its typical cornering speed was far lower. The wing therefore
                         had to be developed for this operating point instead of copying a two-element
                         Formula 1 arrangement.
                     </p>
-                </article>
-            </div>
-
-            <div class="design-progression">
-                <article>
-                    <span>1</span>
-                    <strong>43&nbsp;N</strong>
-                    <h3>Single element</h3>
-                    <p>Flow separated at 16° incidence and the concept remained far below target.</p>
-                </article>
-                <article>
-                    <span>2</span>
-                    <strong>80&nbsp;N</strong>
-                    <h3>Stacked double wing</h3>
-                    <p>Interference between the two layers increased the drag penalty and still missed the requirement.</p>
-                </article>
-                <article class="design-progression-final">
-                    <span>3</span>
-                    <strong>≈&nbsp;180&nbsp;N</strong>
-                    <h3>Three-element B2</h3>
-                    <p>Attached flow, 97 N drag and aerodynamic efficiency of 1.8 at the 12 m/s design condition.</p>
-                </article>
-            </div>
-
-            <div class="aerospace-development-grid">
-                <div>
-                    <p class="section-label">Iterative workflow</p>
-                    <h3>Geometry, numerical force data and flow visualization</h3>
-                    <p>
+</article>
+</div>
+<div class="design-progression">
+<article>
+<span>1</span>
+<strong>43 N</strong>
+<h3>Single element</h3>
+<p>Flow separated at 16° incidence and the concept remained far below target.</p>
+</article>
+<article>
+<span>2</span>
+<strong>80 N</strong>
+<h3>Stacked double wing</h3>
+<p>Interference between the two layers increased the drag penalty and still missed the requirement.</p>
+</article>
+<article class="design-progression-final">
+<span>3</span>
+<strong>≈ 180 N</strong>
+<h3>Three-element B2</h3>
+<p>Attached flow, 97 N drag and aerodynamic efficiency of 1.8 at the 12 m/s design condition.</p>
+</article>
+</div>
+<div class="aerospace-development-grid">
+<div>
+<p class="section-label">Iterative workflow</p>
+<h3>Geometry, numerical force data and flow visualization</h3>
+<p>
                         Airfoil coordinates were transformed in Excel using scale, rotation and
                         translation, then used to build the three-dimensional wing geometry in CATIA.
                         Each iteration received a fine SimScale mesh and was evaluated at 12 m/s.
                     </p>
-                    <p>
+<p>
                         Pressure and viscous forces were resolved into downforce and drag, then compared
                         with the previous version. Autodesk Flow Design visualizations showed separation,
                         attachment and upwash, guiding position, chord and incidence changes of only a
                         few millimeters or degrees at a time.
                     </p>
-                </div>
-
-                <figure class="image-card formula-airfoil-card">
-                    <img src="assets/airfoil-geometry.png" alt="Airfoil geometry evaluated during Formula Student rear-wing development" loading="lazy" decoding="async">
-                    <figcaption>
-                        <strong>Airfoil iteration set</strong>
+</div>
+<figure class="image-card formula-airfoil-card">
+<img alt="Airfoil geometry evaluated during Formula Student rear-wing development" decoding="async" loading="lazy" src="assets/airfoil-geometry.png"/>
+<figcaption>
+<strong>Airfoil iteration set</strong>
                         Candidate geometries developed and compared during the optimization process.
                     </figcaption>
-                </figure>
-            </div>
-
-            <figure class="image-card comparison-card flow-comparison-card">
-                <div class="paired-visual paired-visual-flow">
-                    <div class="paired-item">
-                        <span>Separated flow · B6</span>
-                        <img src="assets/separated-flow.png" alt="Autodesk CFD visualization showing separated flow around rear-wing design B6" loading="lazy" decoding="async">
-                    </div>
-                    <div class="paired-item">
-                        <span>Attached flow · final B2</span>
-                        <img src="assets/attached-flow.png" alt="Autodesk CFD visualization showing attached flow around final rear-wing design B2" loading="lazy" decoding="async">
-                    </div>
-                </div>
-                <figcaption>
-                    <strong>Flow visualization directed the iteration</strong>
+</figure>
+</div>
+<figure class="image-card comparison-card flow-comparison-card">
+<div class="paired-visual paired-visual-flow">
+<div class="paired-item">
+<span>Separated flow · B6</span>
+<img alt="Autodesk CFD visualization showing separated flow around rear-wing design B6" decoding="async" loading="lazy" src="assets/separated-flow.png"/>
+</div>
+<div class="paired-item">
+<span>Attached flow · final B2</span>
+<img alt="Autodesk CFD visualization showing attached flow around final rear-wing design B2" decoding="async" loading="lazy" src="assets/attached-flow.png"/>
+</div>
+</div>
+<figcaption>
+<strong>Flow visualization directed the iteration</strong>
                     Separation around B6 compared with attached flow around the selected B2 geometry.
                 </figcaption>
-            </figure>
-
-            <div class="formula-results-grid">
-                <figure class="image-card formula-table-card">
-                    <div class="stacked-table-images">
-                        <img src="assets/downforce-table-upper.png" alt="Upper portion of the Formula Student rear-wing CFD result table" loading="lazy" decoding="async">
-                        <img src="assets/downforce-table-lower.png" alt="Lower portion of the Formula Student rear-wing CFD result table" loading="lazy" decoding="async">
-                    </div>
-                    <figcaption>
-                        <strong>CFD comparison</strong>
+</figure>
+<div class="formula-results-grid">
+<figure class="image-card formula-table-card">
+<div class="stacked-table-images">
+<img alt="Upper portion of the Formula Student rear-wing CFD result table" decoding="async" loading="lazy" src="assets/downforce-table-upper.png"/>
+<img alt="Lower portion of the Formula Student rear-wing CFD result table" decoding="async" loading="lazy" src="assets/downforce-table-lower.png"/>
+</div>
+<figcaption>
+<strong>CFD comparison</strong>
                         Downforce, drag and aerodynamic efficiency across the B-series iterations.
                     </figcaption>
-                </figure>
-
-                <div class="formula-result-copy">
-                    <p class="section-label">Final aerodynamic selection</p>
-                    <h3>Fifty newtons beyond the original target</h3>
-                    <p>
+</figure>
+<div class="formula-result-copy">
+<p class="section-label">Final aerodynamic selection</p>
+<h3>Fifty newtons beyond the original target</h3>
+<p>
                         B2 was selected because it combined approximately 180 N of downforce with
                         97 N of drag and visibly strong flow attachment. Designs producing more force
                         carried much larger drag penalties and lower aerodynamic efficiency.
                     </p>
-                    <p>
+<p>
                         Moving from the earlier 80 N configuration to B2 increased downforce by about
                         100 N and exceeded the 130 N requirement by 50 N. Sharing its main airfoil
                         section with the front wing also reduced the number of manufacturing molds.
                     </p>
-                </div>
-            </div>
-
-            <div class="team-integration-panel">
-                <div>
-                    <p class="section-label">Team integration</p>
-                    <h3>Aerodynamic geometry prepared for CFRP manufacture</h3>
-                    <p>
+</div>
+</div>
+<div class="team-integration-panel">
+<div>
+<p class="section-label">Team integration</p>
+<h3>Aerodynamic geometry prepared for CFRP manufacture</h3>
+<p>
                         The team manufacturing concept separated each airfoil into upper, lower and
                         corrugated internal sections for prepreg carbon-fiber construction. Structural
                         detailing and swan-neck mounting were completed by other team contributors;
                         these images show how my aerodynamic surfaces entered the wider assembly.
                     </p>
-                </div>
-
-                <div class="team-integration-images">
-                    <figure class="image-card">
-                        <img src="assets/moulds-left-to-right–upper-surface-lower-surface-corrugated-sections.png" alt="Rear-wing mold components for upper, lower and corrugated sections" loading="lazy" decoding="async">
-                        <figcaption>Upper, lower and corrugated-section mold strategy.</figcaption>
-                    </figure>
-                    <figure class="image-card">
-                        <img src="assets/exploded-view-of-1mm-cfrp-components.png" alt="Exploded view of carbon-fiber rear-wing components" loading="lazy" decoding="async">
-                        <figcaption>Team-developed exploded CFRP assembly.</figcaption>
-                    </figure>
-                </div>
-            </div>
-
-            <div class="evidence-panel formula-evidence-panel">
-                <div>
-                    <p class="section-label">Project evidence</p>
-                    <h3>CFD history and Critical Design Review</h3>
-                    <p>
+</div>
+<div class="team-integration-images">
+<figure class="image-card">
+<img alt="Rear-wing mold components for upper, lower and corrugated sections" decoding="async" loading="lazy" src="assets/moulds-left-to-right–upper-surface-lower-surface-corrugated-sections.png"/>
+<figcaption>Upper, lower and corrugated-section mold strategy.</figcaption>
+</figure>
+<figure class="image-card">
+<img alt="Exploded view of carbon-fiber rear-wing components" decoding="async" loading="lazy" src="assets/exploded-view-of-1mm-cfrp-components.png"/>
+<figcaption>Team-developed exploded CFRP assembly.</figcaption>
+</figure>
+</div>
+</div>
+<div class="evidence-panel formula-evidence-panel">
+<div>
+<p class="section-label">Project evidence</p>
+<h3>CFD history and Critical Design Review</h3>
+<p>
                         The linked SimScale project shows the digital iteration history; the team CDR
                         records the requirements, CFD method, results and manufacturing proposal.
                     </p>
-                </div>
+</div>
+<div class="evidence-actions">
+<a class="button-link" href="https://www.simscale.com/projects/robypems/rear_wing_v1/" rel="noopener" target="_blank">Open SimScale history <span aria-hidden="true">↗</span></a>
+<a class="button-link" href="assets/fs3-cdr.pdf" rel="noopener" target="_blank">View Critical Design Review <span aria-hidden="true">↗</span></a>
+</div>
+</div>
+</section>
+<section class="project additional-work" id="more-work">
+<header class="project-header">
+<div><div class="project-heading-line"><p aria-hidden="true" class="project-number">7</p><p class="project-kicker">Product Design</p></div>
 
-                <div class="evidence-actions">
-                    <a class="button-link" href="https://www.simscale.com/projects/robypems/rear_wing_v1/" target="_blank" rel="noopener">Open SimScale history <span aria-hidden="true">↗</span></a>
-                    <a class="button-link" href="assets/fs3-cdr.pdf" target="_blank" rel="noopener">View Critical Design Review <span aria-hidden="true">↗</span></a>
-                </div>
-            </div>
-        </section>
+<p class="project-context">Selected product development and supporting manufacturing experience</p>
+</div>
 
-        <section class="project additional-work" id="more-work">
-            <header class="project-header">
-                <div>
-                    <p class="project-kicker">Additional Design &amp; Verification Work</p>
-                    <p class="project-context">Products, tooling, analysis and environmental testing</p>
-                </div>
-
-                <p class="project-number" aria-hidden="true">6</p>
-            </header>
-
-            <div class="project-title-grid">
-                <h2>Further Engineering Evidence</h2>
-
-                <p class="project-summary">
-                    Selected work across ruggedized product development, manufacturing, verification
-                    and sustainable-product tooling. Some client hardware is described without imagery.
-                </p>
-            </div>
-
-            <div class="work-card-grid">
-                <article class="work-card work-card-wide">
-                    <p class="work-tag">Product redesign · Industry</p>
-                    <h3>Flagship Ruggedized Headset</h3>
-                    <p>
-                        Led a SolidWorks redesign addressing seven failure modes behind a 25% reject
+</header>
+<div class="project-title-grid">
+<h2>Product Design</h2>
+<p class="project-summary">Key design contributions to released hardware and other products. Proprietary customer-product imagery is not shown.</p>
+</div>
+<div class="work-card-grid">
+<article class="work-card work-card-wide">
+<p class="work-tag">Product redesign · Industry</p>
+<h3>Flagship Ruggedized Headset</h3>
+<p>Led the headset redesign (through SolidWorks) addressing seven failure modes behind a 25% reject
                         rate. The work combined root-cause investigation, DFM and production changes
                         across 35 plastic and rubber injection-molded components, saving tens of
-                        thousands of pounds and improving production-tool life.
-                    </p>
-                    <ul>
-                        <li>Root-cause investigation across product and process failures</li>
-                        <li>Injection-molded plastic and rubber part redesign</li>
-                        <li>Design reviews, tolerancing and supplier manufacture</li>
-                    </ul>
-                </article>
-
-                <article class="work-card">
-                    <p class="work-tag">Structural redesign · Validation</p>
-                    <h3>Boom-Arm Stiffness</h3>
-                    <p>
+                        thousands of pounds and improving production-tool life.</p>
+<ul>
+<li>Root-cause investigation across product and process failures</li>
+<li>Injection-molded plastic and rubber part redesign</li>
+<li>Design reviews, tolerancing and supplier manufacture</li>
+</ul>
+</article>
+<article class="work-card">
+<p class="work-tag">Structural redesign · Validation</p>
+<h3>Boom-Arm Stiffness</h3>
+<p>
                         Redesigned a headset boom-arm system to increase stiffness fourfold and remove
                         unwanted movement in a severe vibration environment. The revised hardware was
                         qualified through MIL-STD-810G vibration and ingress testing.
                     </p>
-                </article>
-
-                <article class="work-card">
-                    <p class="work-tag">Product development · Creo/Windchill</p>
-                    <h3>Respirator Cables &amp; Throat Microphones</h3>
-                    <p>
+</article>
+<article class="work-card">
+<p class="work-tag">Product development · Creo/Windchill</p>
+<h3>Respirator Cables &amp; Throat Microphones</h3>
+<p>
                         Developed four headset-to-respirator cable assemblies and two throat microphones
                         from CAD through manufacture and mass-production qualification, including salt-
                         fog, thermal and cable-bend testing.
                     </p>
-                </article>
+</article>
 
-                <article class="work-card">
-                    <p class="work-tag">Custom test development</p>
-                    <h3>Helmet Softliner Compression</h3>
-                    <p>
-                        Designed cyclic-compression testing for two helmet softliners, using a mechanical
-                        roller to apply thousands of repeatable load cycles where standard equipment did
-                        not reproduce the required condition.
-                    </p>
-                </article>
-
-                <article class="work-card">
-                    <p class="work-tag">Sustainable products · Internship</p>
-                    <h3>Biodegradable Products &amp; Mold Tooling</h3>
-                    <p>
+<article class="work-card">
+<p class="work-tag">Sustainable products · Internship</p>
+<h3>Biodegradable Products &amp; Mold Tooling</h3>
+<p>
                         At Ecoinno, designed meal trays, coffee capsules and bottles in Siemens NX, then
                         designed the wet molds used to collect recycled composite material and the heat-
                         press tools used to form and finish each product.
                     </p>
-                </article>
+</article>
 
-                <article class="work-card">
-                    <p class="work-tag">CFD · BEng dissertation</p>
-                    <h3>Electric Ducted-Fan Cooling</h3>
-                    <p>
-                        Investigated the coupled aerodynamic and thermodynamic cooling performance of an
-                        electric ducted fan. ANSYS Fluent was used to evaluate and optimize duct-support
-                        geometry while accounting for its effect on cooling flow.
-                    </p>
-                </article>
-
-                <article class="work-card">
-                    <p class="work-tag">Manufacturing &amp; quality</p>
-                    <h3>Sheet-Metal Production Engineering</h3>
-                    <p>
+<article class="work-card">
+<p class="work-tag">Manufacturing &amp; quality</p>
+<h3>Sheet-Metal Production Engineering</h3>
+<p>
                         Planned end-to-end manufacturing routes for aerospace and defense assemblies,
                         generated FAIR documentation, verified tolerances with CMM and manual metrology,
                         and led NCR/CAR root-cause containment. Nesting and routing improvements reduced
                         waste, cost and energy use.
                     </p>
-                </article>
-            </div>
+</article>
+</div>
 
-            <div class="related-tool end-tool">
-                <div>
-                    <p class="section-label">Additional functional-test tooling</p>
-                    <h3>Motor and Actuator Holder</h3>
-                    <p>
-                        A compact holder developed for functional microphone testing. It packages the
-                        motor and actuator while presenting microphones in opposite orientations,
-                        reducing manual repositioning during the test sequence. Additional photographs
-                        can be added when the remaining test-station imagery is cleared for publication.
-                    </p>
-                </div>
+</section>
 
-                <figure class="image-card cad-card compact-visual">
-                    <img src="assets/motor-mount-compressed.png" alt="CAD model of a motor and actuator holder for functional microphone testing" loading="lazy" decoding="async">
-                    <figcaption>Motor and actuator holder CAD.</figcaption>
-                </figure>
-            </div>
-        </section>
-
-        <section class="design-principles" aria-labelledby="principles-title">
-            <div class="principles-heading">
-                <p class="section-label">Design approach</p>
-                <h2 id="principles-title">Visual clarity with a mechanical reason.</h2>
-            </div>
-
-            <div class="principles-grid">
-                <article>
-                    <span>1</span>
-                    <h3>Purpose shapes the form</h3>
-                    <p>
-                        Geometry communicates how a part locates, moves, grips or carries load. Good
-                        visual design makes the operation easier to understand and harder to misuse.
-                    </p>
-                </article>
-
-                <article>
-                    <span>2</span>
-                    <h3>Build early</h3>
-                    <p>
-                        CAD becomes useful when it meets real tolerances, materials, operators and
-                        equipment. Prototypes turn assumptions into specific improvements.
-                    </p>
-                </article>
-
-                <article>
-                    <span>3</span>
-                    <h3>Measure the result</h3>
-                    <p>
-                        Yield, stiffness, noise, durability and test compliance show whether a design
-                        works. The strongest visual solution still has to earn its place mechanically.
-                    </p>
-                </article>
-            </div>
-        </section>
-
-        <footer class="site-footer">
-            <div>
-                <p class="section-label">Robert Pemberton</p>
-                <h2>Mechanical and Aerospace Engineer</h2>
-            </div>
-
-            <div class="footer-links">
-                <a href="mailto:robertkpemberton@gmail.com">robertkpemberton@gmail.com</a>
-                <a href="assets/robert-pemberton-cv-USC.pdf" target="_blank" rel="noopener">View USC application CV <span aria-hidden="true">↗</span></a>
-                <a href="#top">Back to top ↑</a>
-            </div>
-        </footer>
-    </main>
+<footer class="site-footer">
+<div>
+<p class="section-label">Robert Pemberton</p>
+<h2>Mechanical and Aerospace Engineer</h2>
+</div>
+<div class="footer-links">
+<a href="mailto:robertkpemberton@gmail.com">robertkpemberton@gmail.com</a>
+<a href="assets/robert-pemberton-cv-generic.pdf" rel="noopener" target="_blank">View CV <span aria-hidden="true">↗</span></a>
+<a href="#top">Back to top ↑</a>
+</div>
+</footer>
+</main>
 </body>
-
 </html>
